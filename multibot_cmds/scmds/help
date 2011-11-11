@@ -1,0 +1,18 @@
+#!/bin/bash
+echo -n 'Supported commands: '
+
+if [ -e cmds/ ]
+then
+    cd cmds/
+    echo -n *
+    cd ..
+fi
+
+if [ -e scmds/ ]
+then
+    cd scmds/
+    echo -n *
+    cd ..
+fi
+
+echo ''
